@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<textarea id="input"></textarea>
+		<div>
+			<button id="save">Save</button>
+		</div>
+
+		<script>
+			(function (global) {
+				document.getElementById("save").addEventListener("click", function () {
+					global.localStorage.setItem("mySharedData", document.getElementById("input").value);
+				}, false);
+			}(window));
+		</script>
+
+	</body>
+</html>

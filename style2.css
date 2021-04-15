@@ -1,0 +1,53 @@
+body
+{
+    background-image: url("personnage.jpg");
+    background-attachment: fixed; /* Le fond restera fixe */
+    background-repeat: no-repeat; /* Le fond ne sera pas répété */
+    background-position: center; /* Le fond sera placé en haut à droite */
+}
+
+h1
+{
+	color:black; 
+	font-family : "Apple Chancery", cursive; 
+	text-align:center; 
+}
+
+#p1
+{ 
+	color:black; 
+	font-family : "Apple Chancery", cursive;
+	float:left; 
+	margin:100px 0px 30px 550px;  
+} 
+		
+#p2
+{ 	color:black; 
+	font-family : "Apple Chancery", cursive;
+	float:right; 
+	margin:100px 550px 30px 0px; 
+}
+
+h2
+{
+	color:black; 
+	font-family : "Apple Chancery", cursive; 
+	text-align:center; 
+}
+
+#p3
+{ 	color:black; 
+	font-family : "Apple Chancery", cursive; 
+	height:41px;
+	width:51px;
+	margin-left:620px; 
+}
+
+#p4
+{ 	color:black; 
+	font-family : "Apple Chancery", cursive; 
+	height:41px;
+	width:51px;
+	margin-left:850px; 
+}
+

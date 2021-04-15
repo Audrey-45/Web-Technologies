@@ -1,0 +1,29 @@
+body
+{
+	background-image: url("incas.jpg");
+	background-attachment: fixed; 
+	background-position:center center;
+}
+
+h1
+{
+	color:black; 
+	font-family : "Apple Chancery", cursive; 
+	text-align:center; 
+	box-shadow: 2px 2px 100px black;
+}
+
+h2
+{
+	color:white; 
+	font-family : "Apple Chancery", cursive; 
+	text-align:center; 
+}
+
+h7
+{
+	color:white; 
+	font-family : "Apple Chancery", cursive; 
+	position:absolute;
+	bottom:0;
+}

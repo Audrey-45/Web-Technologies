@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html> 
+
+	<head>
+		<meta charset="UTF-8">
+		<title>yyy</title>
+		<link rel="stylesheet" href="style16.css" />
+		
+		
+	</head>
+	<body>
+
+		<script>
+ 
+			var index;
+			function notitication(event) {
+			  alert("Tu as cliqué sur le " + event.target.innerHTML.toLowerCase());
+			}
+			 
+			function notificationThenDestroy(event) {
+			  notification(event);
+			  document.body.removeChild(event.target);
+			}
+			 
+			for (index = 0; index < 3; index++) {
+			
+				for (index2 = 0; index2 < 3; index2++) {
+					var button = document.createElement("button");  
+					button.innerHTML = "Bouton " + (index + 1);
+					
+			
+				
+					button.classList.add("ggg"); 
+					document.body.appendChild(button);
+				}
+			}
+		</script>
+	</body>
+</html>
+
+
+
+

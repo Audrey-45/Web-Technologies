@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Enter Name</title>
+		<link rel="stylesheet" href="style3.css" />
+	</head>
+	<body>
+		</br></br></br></br></br></br></br>
+		<input type="text" placeholder="What's your name ?" id="input">
+		</br></br>
+		<div>
+			<button id="save">Enter</button>
+		</div>
+
+		<script>
+			(function (global) {
+				document.getElementById("save").addEventListener("click", function () {
+					global.localStorage.setItem("mySharedData", document.getElementById("input").value);
+				}, false);
+			}(window));
+		</script>
+
+	</body>
+</html>
