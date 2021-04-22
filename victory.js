@@ -15,7 +15,7 @@ function victory(){
 		}
 	document.getElementById('idvideo').addEventListener('ended',myHandler,false);
 	function myHandler(e) {
-		window.location.href="file:///C:/Users/david/OneDrive/Documents/ING3%20Semestre%204/Web%20Technologies/victory.html" 
+		window.location.href="./victory.html" 
 	
 	}
 }
