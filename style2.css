@@ -1,3 +1,5 @@
+/* Body of the game, change when the gamer change of place with the parameters black and none */
+
 body
 {
 	background-image: url("personnage.jpg");
@@ -6,6 +8,7 @@ body
     background-repeat: no-repeat; /* Le fond ne sera pas répété */
 	text-align:center; 
 }
+
 
 #perso h1
 {
