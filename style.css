@@ -1,8 +1,8 @@
 body
 {
 	background-image: url("incas.jpg");
-	background-attachment: fixed; 
-	background-position:center center;
+	background-attachment: fixed; /* Le fond restera fixe */
+    background-position: center; /* Le fond sera placé en haut à droite */
 }
 
 h1
@@ -26,4 +26,5 @@ h7
 	font-family : "Apple Chancery", cursive; 
 	position:absolute;
 	bottom:0;
+	text-align:left; 
 }

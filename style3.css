@@ -1,8 +1,0 @@
-body
-{
-    background-image: url("lama.jpg");
-    background-attachment: fixed; /* Le fond restera fixe */
-    background-repeat: no-repeat; /* Le fond ne sera pas répété */
-    background-position: center; /* Le fond sera placé en haut à droite */
-	text-align:center; 
-}

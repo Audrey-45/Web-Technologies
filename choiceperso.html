@@ -1,38 +1,479 @@
 <!DOCTYPE html>
 <html>
-		<head>
-			<title>Character Choose </title>
-			<link rel="stylesheet" href="style2.css" />
-		</head>
-	
-		<body>
-			
+	<head>
+		<title>Character Choose </title>
+		<link rel="stylesheet" href="style2.css"/>
+		<title> Inca's Escape Game </title>
+	</head>
+
+	<body>
+	<!-- All the scripts -->
+		<script type= "text/javascript" src="inputName.js"></script>
+		<script type= "text/javascript" src="storyOne.js"></script>
+		<script type= "text/javascript" src="storyEnd.js"></script>
+		<script type= "text/javascript" src="plazaPrincipal.js"></script>
+		<script type= "text/javascript" src="plazaPrincipalPerso.js"></script>
+		<script type= "text/javascript" src="plazaPrincipalPerso2.js"></script>
+		<script type= "text/javascript" src="intihuatana.js"></script>
+		<script type= "text/javascript" src="intihuatanaPerso.js"></script>
+		<script type= "text/javascript" src="intimachay.js"></script>
+		<script type= "text/javascript" src="intimachayPerso.js"></script>
+		<script type= "text/javascript" src="rocaSagrada.js"></script>
+		<script type= "text/javascript" src="rocaSagradaPerso.js"></script>
+		<script type= "text/javascript" src="temploTresVentanas.js"></script>
+		<script type= "text/javascript" src="temploTresVentanasPerso.js"></script>
+		<script type= "text/javascript" src="labyrinth.js"></script>
+		<script type= "text/javascript" src="treasure.js"></script>
+		<script type= "text/javascript" src="totem1.js"></script>
+		<script type= "text/javascript" src="totem2.js"></script>
+		<script type= "text/javascript" src="totem3.js"></script>
+		<script type= "text/javascript" src="enigmaOne.js"></script>
+		<script type= "text/javascript" src="enigmaTwo.js"></script>
+		<script type= "text/javascript" src="enigmaThree.js"></script>
+		<script type= "text/javascript" src="countItems.js"></script>
+		<script type= "text/javascript" src="puzzle.js"></script>
+		<script type= "text/javascript" src="treasure.js"></script>
+		<script type= "text/javascript" src="victory.js"></script>
+		
+	<!-- Choice of the character -->
+		<div id="perso">
 			<br/>
 			<br/>
 			<h1>Choose your character</h1>
-			
 			<p id="p1">
 				<img src="esteban.png">
 			<p>		
 			<p id="p2">
-			
 				<img src="zia.png">				
-				
 			<p>
-			
 			<br/>
 			<br/>
-			
-
 			<p id="p3">
-				<button onclick="window.location='http://127.0.0.1/register.php'">Esteban</button>
+				<button onclick="inputName();">Esteban</button>
 			<p>
 			
 			<p id="p4">
-				<button onclick="window.location='http://127.0.0.1/register.php'">Zia</button>
-			<p>
-			
+				<button onclick="inputName();">Zia</button>
+			<p>							
+		</div>
+		
+	<!-- Enter his name -->
+		<div id="inputName" style="display:none">
+			</br></br></br></br></br></br></br>
 
+				<p>What is your name ?</p>
+				<input id="name" type="text" name="firstname" style="align:center">
+				<button onclick="storyOne();">ENTER</button>
+
+		</div>
+		
+	<!-- Page telling to the purpose of the game -->
+		<div id="storyOne" style="display:none">	
+			<div class="first">
+			<h3 class="block-effect" style="--td: 0.9s">
+			<div id="welcome" class="block-reveal" style="--bc: white; --d: .0s"></div>
+			<div class="block-reveal" style="--bc: white; --d: .2s">A long time ago, the civilization Inca was on this land. They lived in the abundance. An Inca preserved his heritage before the extinction of this civilization. He saves secrets.</div>
+			<div class="block-reveal" style="--bc: white; --d: .9s">No one ever found the treasure. You must do all your possible to discover it and save the world. You're the one, it's your destiny.</h3>
+			<button onclick="storyEnd();">NEXT</button>
+			</div>
+		</div>
+		
+	<!-- Next of the purpose of the game -->
+		<div class="container" id="storyEnd" style="display:none">
+			<button type="button" class="button2" onclick="plazaPrincipal();">GO IN SEARCH OF THE TREASURE</button>
+		</div>
+		
+	<!-- First place, the gamer arrive here first -->
+		<div id="plazaPrincipal" style="display:none">
+			<img id = "rightPlaza" src= "inca1.png"/>
+			<img id = "bottomPlaza" src= "arrow.png"/>
+
+			<div class="wrapper">
+			  <a href="#" class="button" onclick="plazaPrincipalPerso();">Talk ?</a>
+			</div>	
+			<a onclick="intihuatana();"><img id = "up" src= "arrowUp.png"/></a>
+			<a onclick="intimachay();"><img id = "left" src= "arrowLeft.png"/></a>
+			<a onclick="rocaSagrada();"><img id = "right" src= "arrowRight.png"/></a>  
+			<a onclick="temploTresVentanas();"><img id = "bottom" src= "arrowBottom.png"/><a>  									
+		</div>
+		
+	<!-- When the gamer click on the talk of the character, this page appears with a inca's anectode -->
+		<div id="plazaPrincipalPerso" style="display:none">
+			<img id = "center" src= "inca1.png"/>
+			<div class="first">
+				<h3 class="block-effect" style="--td: 0.9s">
+				<div class="block-reveal" style="--bc: white; --d: .0s">At the time of the arrival of the Spaniards, the Incas considered them as gods.</div>
+				<div class="block-reveal" style="--bc: white; --d: .3s">The Spaniards made prisoner the last emperor: Atahualpa, who gave him all his gold in exchange for his release.</div>
+				<div class="block-reveal" style="--bc: white; --d: .9s">They took the gold and executed him in 1533.</div>
+				</h3>
+				<button class="next" onclick="plazaPrincipalPerso2();">NEXT</button>
+			</div>
+		</div>
+		
+	<!-- Next of the anectode -->
+		<div id="plazaPrincipalPerso2" style="display:none">
+			<img id = "center" src= "inca1.png"/>
+			<div class="first">
+				<h3 class="block-effect" style="--td: 0.9s">
+				<div class="block-reveal" style="--bc: white; --d: .0s">Moreover, the numerous plunders, massacres, exploitation of the natives, </div>
+				<div class="block-reveal" style="--bc: white; --d: .6s">and their lack of immune defences against the diseases brought by the Spaniards are the main reasons for the fall of the Inca civilization.</div>
+				<button class="next" onclick="plazaPrincipal();">NEXT</button>
+				</h3>
+			</div>
+		</div>
+		
+	<!-- An another place of the game -->
+		<div id="intimachay" style="display:none">
+			<button onclick="labyrinth1();">SOLVE THE LABYRINTH</button>
+			<img id = "rightIntimachay" src= "inca9.png"/>
+			<img id = "bottomIntimachay" src= "arrow2.png"/>
+
+			<div class="wrapper">
+			  <a href="#" class="button" onclick="intimachayPerso();">Talk ?</a>
+			</div>
+			<a onclick="plazaPrincipal();"><img id = "right" src= "arrowRight.png"/></a>  					
+		</div>
+		
+	<!-- Page with the anectode of the character -->
+		<div id="intimachayPerso" style="display:none">
+			<img id = "center" src= "inca9.png"/>
+			<div class="first">
+				<h3 class="block-effect" style="--td: 0.9s">
+				<div class="block-reveal" style="--bc: white; --d: .0s">The Incas venerated several gods.</div>
+				<div class="block-reveal" style="--bc: white; --d: .4s">The most important was Unti, the god of the Sun, married to Quilla, goddess of the Moon.</div>
+				<button class="next" onclick="intimachay();">NEXT</button>
+				</h3>
+			</div>
+		</div>
+		
+	<!-- All the pages of the labyrinth -->
+		
+	<!-- Enter of the labyrinth -->
+		<div id="labyrinth1" style="display:none">
+			<a onclick="labyrinth2();"><img id = "up" src= "arrowUp.png"/></a>
+			<a onclick="intimachay();"><img id = "right" src= "arrowRight.png"/></a>  						
+			<a onclick="labyrinth3();"><img id = "bottom" src= "arrowBottom.png"/><a>  						
+			<a onclick="lockLaby1();"><img id ="lock" src= "lock.png"/><a>  						
+		</div>
+		<div id="labyrinth2" style="display:none">
+			<a onclick="labyrinth3();"><img id = "up" src= "arrowUp.png"/></a>
+			<a onclick="labyrinth1();"><img id = "bottom" src= "arrowBottom.png"/><a>  						
+			<a onclick="lockLaby2();"><img id ="lock" src= "lock.png"/><a>  						
+		</div>
+		<div id="labyrinth3" style="display:none">
+			<a onclick="labyrinth1();"><img id = "up" src= "arrowUp.png"/></a>
+			<a onclick="labyrinth4();"><img id = "left" src= "arrowLeft.png"/></a> 	
+			<a onclick="labyrinth2();"><img id = "bottom" src= "arrowBottom.png"/><a>  											
+			<button id="num5" onclick="number5();">5</button>	
+			<a onclick="lockLaby3();"><img id ="lock" src= "lock.png"/><a>  						
+		</div>
+		<div id="labyrinth4" style="display:none">
+			<a onclick="labyrinth7();"><img id = "up" src= "arrowUp.png"/></a>
+			<a onclick="labyrinth6();"><img id = "left" src= "arrowLeft.png"/></a>
+			<a onclick="labyrinth5();"><img id = "right" src= "arrowRight.png"/></a>  
+			<a onclick="labyrinth3();"><img id = "bottom" src= "arrowBottom.png"/><a>  						
+			<a onclick="lockLaby4();"><img id ="lock" src= "lock.png"/><a>  						
+		</div>
+		<div id="labyrinth5" style="display:none">
+			<a onclick="labyrinth4();"><img id = "left" src= "arrowLeft.png"/></a>  						
+			<button id="num3" onclick="number3();">3</button>	
+			<a onclick="lockLaby5();"><img id ="lock" src= "lock.png"/><a>  						
+		</div>
+		<div id="labyrinth6" style="display:none">
+			<a onclick="labyrinth4();"><img id = "right" src= "arrowRight.png"/></a>   						
+			<a onclick="lockLaby6();"><img id ="lock" src= "lock.png"/><a>  						
+		</div>
+		<div id="labyrinth7" style="display:none">
+			<a onclick="labyrinth12();"><img id = "up" src= "arrowUp.png"/></a>
+			<a onclick="labyrinth8();"><img id = "left" src= "arrowLeft.png"/></a>
+			<a onclick="labyrinth4();"><img id = "bottom" src= "arrowBottom.png"/><a>  						
+			<a onclick="lockLaby7();"><img id ="lock" src= "lock.png"/><a>  						
+		</div>
+		<div id="labyrinth8" style="display:none">
+			<a onclick="labyrinth9();"><img id = "up" src= "arrowUp.png"/></a>
+			<a onclick="labyrinth13();"><img id = "left" src= "arrowLeft.png"/></a>
+			<a onclick="labyrinth7();"><img id = "right" src= "arrowRight.png"/></a>  						
+			<a onclick="lockLaby8();"><img id ="lock" src= "lock.png"/><a>  						
+		</div>
+		<div id="labyrinth9" style="display:none">
+			<a onclick="labyrinth10();"><img id = "up" src= "arrowUp.png"/></a>
+			<a onclick="labyrinth8();"><img id = "bottom" src= "arrowBottom.png"/><a>  						
+			<a onclick="lockLaby9();"><img id ="lock" src= "lock.png"/><a>  						
+		</div>
+		<div id="labyrinth10" style="display:none">
+			<a onclick="plazaPrincipal();"><img id = "up" src= "arrowUp.png"/></a>					
+			<a onclick="labyrinth9();"><img id = "bottom" src= "arrowBottom.png"/><a>  						
+			<button id="num1" onclick="number1();">1</button>	
+			<a onclick="lockLaby10();"><img id ="lock" src= "lock.png"/><a>  						
+		</div>
+		<div id="labyrinth12" style="display:none">
+			<a onclick="labyrinth13();"><img id = "up" src= "arrowUp.png"/></a>
+			<a onclick="labyrinth7();"><img id = "bottom" src= "arrowBottom.png"/><a>  						
+			<a onclick="lockLaby12();"><img id ="lock" src= "lock.png"/><a>  						
+		</div>
+		<div id="labyrinth13" style="display:none">
+			<a onclick="labyrinth14();"><img id = "up" src= "arrowUp.png"/></a>
+			<a onclick="labyrinth8();"><img id = "right" src= "arrowRight.png"/></a> 			 
+			<a onclick="labyrinth12();"><img id = "bottom" src= "arrowBottom.png"/><a>  
+			<a onclick="lockLaby13();"><img id ="lock" src= "lock.png"/><a>  						
+		</div>
+		<div id="labyrinth14" style="display:none">
+			<a onclick="labyrinth13();"><img id = "bottom" src= "arrowBottom.png"/><a>  						
+			<button id="num32" onclick="number32();">3</button>	
+			<a onclick="lockLaby14();"><img id ="lock" src= "lock.png"/><a>  						
+		</div>
+		
+	<!-- Items to see the items recovered -->
+		<div id="lockLaby" style="display:none">
+			</br>   
+			<button id="title" type="button"> What is the result ?</button>
+			</br>
+			<div>
+			<img id="leftLock" src="lock.png">	
+			<input type="text" placeholder="ENTER VALUE HERE" id="in">
+			<img id="rightLock" src="lock.png">
+			</div> </br> </br> 
+			 <button type="button" onclick="getValueLock();">ENTER</button>
+				</br> </br> </br> </br> 
+			<button id="noItems" type="button" style="display:none"><h1>You have no items</h1></button>	
+			<button id="items" style="display:none"><h1>Your items :</h1></button>
+			</br> </br> </br> 
+			<div>
+				<button id="numberOne" type="button" style="display:none"></button>
+				<button id="numberTwo" type="button" style="display:none"></button>
+				<button id="numberThree" type="button" style="display:none"></button>
+				<button id="numberFour" type="button" style="display:none"></button>
+			</div>
+		</div>
+		
+	<!-- Same but with the possibility to come back to the good page of the labyrinth -->
+		<div id="lockLaby1" style="display:none">
+			<a onclick="labyrinth1();"><img id = "left" src= "arrowLeft.png"/></a> 	
+		</div>
+		<div id="lockLaby2" style="display:none">
+			<a onclick="labyrinth2();"><img id = "left" src= "arrowLeft.png"/></a> 			
+		</div>
+		<div id="lockLaby3" style="display:none">	
+			<a onclick="labyrinth3();"><img id = "left" src= "arrowLeft.png"/></a> 		
+		</div>
+		<div id="lockLaby4" style="display:none">
+			<a onclick="labyrinth5();"><img id = "left" src= "arrowLeft.png"/></a> 	
+		</div>
+		<div id="lockLaby6" style="display:none">
+			<a onclick="labyrinth6();"><img id = "left" src= "arrowLeft.png"/></a> 	
+		</div>
+		<div id="lockLaby7" style="display:none">
+			<a onclick="labyrinth7();"><img id = "left" src= "arrowLeft.png"/></a> 	
+		</div>
+		<div id="lockLaby8" style="display:none">
+			<a onclick="labyrinth8();"><img id = "left" src= "arrowLeft.png"/></a> 	
+		</div>
+		<div id="lockLaby9" style="display:none">
+			<a onclick="labyrinth9();"><img id = "left" src= "arrowLeft.png"/></a> 	
+		</div>
+		<div id="lockLaby10" style="display:none">
+			<a onclick="labyrinth10();"><img id = "left" src= "arrowLeft.png"/></a> 	
+		</div>
+		<div id="lockLaby12" style="display:none">
+			<a onclick="labyrinth12();"><img id = "left" src= "arrowLeft.png"/></a> 	
+		</div>
+		<div id="lockLaby13" style="display:none">
+			<a onclick="labyrinth13();"><img id = "left" src= "arrowLeft.png"/></a> 	
+		</div>
+		<div id="lockLaby14" style="display:none">
+			<a onclick="labyrinth14();"><img id = "left" src= "arrowLeft.png"/></a> 	
+		</div>
+		
+	<!-- When the enigma of the puzzle is done, the gamer win this totem -->
+		<div id="totem2" style="display:none">
+			</br>
+			<h1>YOU FIND THE LABYRINTH TOTEM</h1>
+			</br> </br> </br> 
+			<img src="totem2.png">
+			</br> </br> </br> </br> 
+			<h1>CONGRATULATIONS</h1>
+			</br> </br> 
+			<button class="return" type="button" onclick="plazaPrincipal();">CONTINUE</button>
+		</div>
+		
+	<!-- An another place -->
+		<div id="rocaSagrada" style="display:none">
+			<button onclick="puzzle();">SOLVE THE PUZZLE</button>
+			<img id = "rightRoca" src= "inca3.png"/>
+			<img id = "bottomRoca" src= "arrow2.png"/>
+
+			<div class="wrapper">
+			  <a href="#" class="button" onclick="rocaSagradaPerso();">Talk ?</a>
+			</div>	
+			<a onclick="plazaPrincipal();"><img id = "left" src= "arrowLeft.png"/></a>		
+		</div>
+		
+	<!-- Page with the anectode of the character -->
+		<div id="rocaSagradaPerso" style="display:none">
+			<img id = "center" src= "inca3.png"/>
+			<div class="first">
+				<h3 class="block-effect" style="--td: 0.9s">
+				<div class="block-reveal" style="--bc: white; --d: .0s">Did you know that the Incas had a small weakness for the deformed skulls? </div>
+				<div class="block-reveal" style="--bc: white; --d: .5s">In the highest classes of the Inca royalty, the members had recourse to cranial deformations, a sign of wealth and power.</div>
+				<div class="block-reveal" style="--bc: white; --d: .9s">From their youngest age, the head of the children was placed between two boards to force the skull to grow more in length.</div>
+				<button class="next" onclick="rocaSagrada();">NEXT</button>
+				</h3>
+			</div>
+		</div>
+		<div id="puzzle" style="display:none">
+			<canvas id="canvas"></canvas>
+			<button class="return" type="button" onclick="plazaPrincipal();">Go back to the plaza principal</button>
+		</div>
 			
-		</body>
+	<!-- When the gamer finish the puzzle, he wins a totem -->
+		<div id="totem1" style="display:none">
+			</br>
+			<h1>YOU FIND THE PUZZLE TOTEM</h1>
+			</br> </br> </br> 
+			<img src="totem1.png">
+			</br> </br> </br> </br> 
+			<h1>CONGRATULATIONS</h1>
+			</br> </br> 
+			<button class="return" type="button" onclick="plazaPrincipal();">CONTINUE</button>
+		</div>
+		
+	<!-- An another place -->
+		<div id="intihuatana" style="display:none">	
+			<button onclick="enigmaOne();">SOLVE ENIGMAS</button>
+			<img id = "rightIntihuatana" src= "inca8.png"/>
+			<img id = "bottomIntihuatana" src= "arrow2.png"/>
+
+			<div class="wrapper">
+			  <a href="#" class="button" onclick="intihuatanaPerso();">Talk ?</a>
+			</div>	
+			<a onclick="plazaPrincipal();"><img id = "bottom" src= "arrowBottom.png"/><a>  		
+		</div>
+		
+	<!-- Page with the anectode of the character -->
+		<div id="intihuatanaPerso" style="display:none">
+			<img id = "center" src= "inca8.png"/>
+			<div class="first">
+				<h3 class="block-effect" style="--td: 0.9s">
+				<div class="block-reveal" style="--bc: white; --d: .0s">As it is known, the Incas did not have writings.</div>
+				<div class="block-reveal" style="--bc: white; --d: .4s">They used quipus significant knot. Each braiding, each knot, each color, ... has a specific meaning.</div>
+				<div class="block-reveal" style="--bc: white; --d: .9s">It can translate of a time, a social environment, a professional field, etc...</div>
+				<button class="next" onclick="intihuatana();">NEXT</button>
+				</h3>
+			</div>
+		</div>
+		
+	<!-- First enigma -->
+		<div id="enigmaOne" style="display:none">	
+			</br>
+			<h1>FIRST ENIGMA</h1>
+				</br>
+			<img src="enigmaOne.png">
+			<h3> What is the result ?</h3>
+			<input type="text" placeholder="Entrez une valeur ici" id="inOne">
+			<button type="button" onclick="getValueOne();">Récupérer la valeur</button>
+			
+			<button class="return" type="button" onclick="plazaPrincipal();">Go back to the plaza principal</button>
+		</div>
+		
+	<!-- Second enigma -->
+		<div id="enigmaTwo" style="display:none">	
+			</br>
+			<h1>SECOND ENIGMA</h1>
+			</br>
+			<img src="enigmaTwo.png">
+			</br></br></br>
+			<h3>CLICK ON THE GOOD COLORS</h3>
+			<div class="one">
+				<button class="button1" onclick="testTwo('button1')"></button>
+				<button class="button2" onclick="testTwo('button2')"></button>
+				<button class="button3" onclick="testTwo('button3')"></button>
+			</div>
+			<div class="two">
+				<button class="button4" onclick="testTwo('button4')"></button>
+				<button class="button5" onclick="testTwo('button5')"></button>
+				<button class="button6" onclick="testTwo('button6')"></button>
+			</div>
+			<div class="three">
+				<button class="button7" onclick="testTwo('button7')"></button>
+				<button class="button8" onclick="testTwo('button8')"></button>
+				<button class="button9" onclick="testTwo('button9')"></button>
+			</div>
+			<button class="return" type="button" onclick="plazaPrincipal();">Go back to the plaza principal</button>
+		</div>
+		
+	<!-- Third enigma -->
+		<div id="enigmaThree" style="display:none">	
+			</br>
+			<h1>THIRD ENIGMA</h1>
+			</br>
+
+			<img src="enigmaThree.png">
+			<h3> What is the result ?</h3>
+			<input type="text" placeholder="Entrez une valeur ici" id="inThree">
+			<button type="button" onclick="getValueThree();">Récupérer la valeur</button>
+
+			<button class="return" type="button" onclick="plazaPrincipal();">Go back to the plaza principal</button>
+		</div>
+		
+	<!-- If the gamer finish the three enigmas, we win a totem -->
+		<div id="totem3" style="display:none">
+			</br>
+			<h1>YOU FIND THE ENIGMAS TOTEM</h1>
+			</br> </br> </br> 
+			<img src="totem3.png">
+			</br> </br> </br> </br> 
+			<h1>CONGRATULATIONS</h1>
+			</br> </br> 
+			<button class="return" type="button" onclick="plazaPrincipal();">CONTINUE</button>
+		</div>
+		
+	<!-- An another place -->
+		<div id="temploTresVentanas" style="display:none">
+			<button onclick="treasure();">OPEN THE TREASURE</button>
+			<img id = "rightTemplo" src= "inca7.png"/>
+			<img id = "bottomTemplo" src= "arrow.png"/>
+
+			<div class="wrapper">
+			  <a href="#" class="button" onclick="temploTresVentanasPerso();">Talk ?</a>
+			</div>	
+			<a onclick="plazaPrincipal();"><img id = "up" src= "arrowUp.png"/></a>		
+		</div>
+		
+	<!-- Page with the anectode of the character -->
+		<div id="temploTresVentanasPerso" style="display:none">
+			<img id = "center" src= "inca7.png"/>
+			<div class="first">
+				<h3 class="block-effect" style="--td: 0.9s">
+				<div class="block-reveal" style="--bc: white; --d: .0s">The first Incas would be originating from the Lake Titicaca.</div>
+				<div class="block-reveal" style="--bc: white; --d: .5s">The son and the daughter of the Sun would have come out of the waters to sink a golden stick in the ground to judge the fertility of the earth and to build the first Inca empire.</div>
+				<button class="next" onclick="temploTresVentanas();">NEXT</button>
+				</h3>
+			</div>
+		</div>
+		
+	<!-- Put all the three totems to get the treasure -->
+		<div id="treasure" style="display:none">
+			 <div draggable="true" id="totem1_copy" ondragstart="dragstart_handler(event);" ondragend="dragend_handler(event);" style="background-image: url('totem1.png');">  
+			 </div>
+			 <div draggable="true" id="totem2_copy" ondragstart="dragstart_handler(event);" ondragend="dragend_handler(event);" style="background-image: url('totem2.png');">
+			 </div>
+			 <div draggable="true" id="totem3_copy" ondragstart="dragstart_handler(event);" ondragend="dragend_handler(event);" style="background-image: url('totem3.png');">
+			 </div>
+			 <div id="totem2_move" ondrop="drop_handler(event);" ondragover="dragover_handler(event);">The LABYRINTH TOTEM </div>
+			 <div id="totem3_move" ondrop="drop_handler(event);" ondragover="dragover_handler(event);">The ENIGMAS TOTEM </div>
+			 <div id="totem1_move" ondrop="drop_handler(event);" ondragover="dragover_handler(event);">The PUZZLE TOTEM </div>
+		
+			<button class="return" type="button" onclick="plazaPrincipal();">Go back to the plaza principal</button>
+		</div>
+		
+	<!-- End of the game with the animation -->
+		<div id="victory" style="display:none">
+			<video id="idvideo" autoplay muted>
+				<source src="chest.mp4" type="video/mp4"/>
+			</video>
+		</div>
+	
+	</body>
 </html>
+
+
