@@ -6,7 +6,7 @@ KEY_LEFT=37;
 
 
 function intihuatana(){
-	document.getElementsByTagName("body")[0].style.backgroundImage = "url('Intihuatana.png')";
+	document.getElementsByTagName("body")[0].style.backgroundImage = "url('intihuatana.png')";
 	document.getElementById("plazaPrincipal").style.display = "none";
 	document.getElementById("intihuatanaPerso").style.display = "none";
 	document.getElementById("intihuatana").style.display = "block"; 
