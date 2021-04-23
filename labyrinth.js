@@ -11,30 +11,30 @@ function labyrinth1(){
 		document.onkeydown = applyKey;
 
 		function checkEventObj ( _event_ ){
-			// --- IE explorer
+			
 			if ( window.event )
 				return window.event;
-			// --- Netscape and other explorers
+			
 			else
 				return _event_;
 		}	
 		function applyKey (_event_){	
-			// --- Retrieve event object from current web explorer
+			
 			var winObj = checkEventObj(_event_);
 			var intKeyCode = winObj.keyCode;	
 			
 			if ( intKeyCode == KEY_UP){	
-				// --- Display Message
+				
 				labyrinth2(); 
-				// --- Map the keyCode in another keyCode not used
+				
 				winObj.keyCode = intKeyCode = REMAP_KEY_T;
 				winObj.returnValue = false;
 				return false;
 			}
 			else if ( intKeyCode == KEY_DOWN){
-				// --- Display Message
+				
 				labyrinth3(); 
-				// --- Map the keyCode in another keyCode not used
+				
 				winObj.keyCode = intKeyCode = REMAP_KEY_T;
 				winObj.returnValue = false;
 				return false;
@@ -57,33 +57,33 @@ function labyrinth1(){
 	document.onkeydown = applyKey;
 
 	function checkEventObj ( _event_ ){
-		// --- IE explorer
+		
 		if ( window.event )
 			return window.event;
-		// --- Netscape and other explorers
+		
 		else
 			return _event_;
 	}	
 	function applyKey (_event_){	
-		// --- Retrieve event object from current web explorer
+		
 		var winObj = checkEventObj(_event_);
 		var intKeyCode = winObj.keyCode;	
 		
 		if ( intKeyCode == KEY_UP){
 				
-			// --- Display Message
+			
 			labyrinth3();
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
 		}
 		else if ( intKeyCode == KEY_DOWN){
 				
-			// --- Display Message
+			
 			labyrinth1(); 
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
@@ -102,44 +102,44 @@ function labyrinth1(){
 	document.onkeydown = applyKey;
 
 	function checkEventObj ( _event_ ){
-		// --- IE explorer
+		
 		if ( window.event )
 			return window.event;
-		// --- Netscape and other explorers
+		
 		else
 			return _event_;
 	}	
 	function applyKey (_event_){	
-		// --- Retrieve event object from current web explorer
+		
 		var winObj = checkEventObj(_event_);
 		var intKeyCode = winObj.keyCode;	
 		
 		if ( intKeyCode == KEY_UP){
 				
-			// --- Display Message
+			
 			labyrinth1();
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
 		}
 		else if ( intKeyCode == KEY_DOWN){
 				
-			// --- Display Message
+			
 			labyrinth2(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
 		}
 		else if ( intKeyCode == KEY_LEFT){
 				
-			// --- Display Message
+			
 			labyrinth4(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
@@ -159,52 +159,52 @@ function labyrinth1(){
 	document.onkeydown = applyKey;
 		
 	function checkEventObj ( _event_ ){
-		// --- IE explorer
+		
 		if ( window.event )
 			return window.event;
-		// --- Netscape and other explorers
+		
 		else
 			return _event_;
 	}	
 	function applyKey (_event_){	
-		// --- Retrieve event object from current web explorer
+		
 		var winObj = checkEventObj(_event_);
 		var intKeyCode = winObj.keyCode;	
 		
 		if ( intKeyCode == KEY_UP){
 				
-			// --- Display Message
+			
 			labyrinth7(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
 		}
 		else if ( intKeyCode == KEY_DOWN){
 				
-			// --- Display Message
+			
 			labyrinth3(); 
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
 		}
 		else if ( intKeyCode == KEY_LEFT){
 				
-			// --- Display Message
+			
 			labyrinth6();
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
 		}
 		else if ( intKeyCode == KEY_RIGHT){
 				
-			// --- Display Message
+			
 			labyrinth5();
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
@@ -221,24 +221,24 @@ function labyrinth1(){
 	document.getElementById("labyrinth5").style.display = "block"; 
 	document.onkeydown = applyKey;
 	function checkEventObj ( _event_ ){
-		// --- IE explorer
+		
 		if ( window.event )
 			return window.event;
-		// --- Netscape and other explorers
+		
 		else
 			return _event_;
 	}	
 	function applyKey (_event_){	
-		// --- Retrieve event object from current web explorer
+		
 		var winObj = checkEventObj(_event_);
 		var intKeyCode = winObj.keyCode;	
 		
 		if ( intKeyCode == KEY_LEFT){
 				
-			// --- Display Message
+			
 			labyrinth4(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
@@ -255,24 +255,24 @@ function labyrinth1(){
 	document.getElementById("labyrinth6").style.display = "block"; 
 	document.onkeydown = applyKey;
 	function checkEventObj ( _event_ ){
-		// --- IE explorer
+		
 		if ( window.event )
 			return window.event;
-		// --- Netscape and other explorers
+		
 		else
 			return _event_;
 	}	
 	function applyKey (_event_){	
-		// --- Retrieve event object from current web explorer
+		
 		var winObj = checkEventObj(_event_);
 		var intKeyCode = winObj.keyCode;	
 		
 		if ( intKeyCode == KEY_RIGHT){
 				
-			// --- Display Message
+			
 			labyrinth4(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
@@ -291,44 +291,44 @@ function labyrinth1(){
 	document.getElementById("labyrinth7").style.display = "block"; 
 	document.onkeydown = applyKey;
 	function checkEventObj ( _event_ ){
-		// --- IE explorer
+		
 		if ( window.event )
 			return window.event;
-		// --- Netscape and other explorers
+		
 		else
 			return _event_;
 	}	
 	function applyKey (_event_){	
-		// --- Retrieve event object from current web explorer
+		
 		var winObj = checkEventObj(_event_);
 		var intKeyCode = winObj.keyCode;	
 		
 		if ( intKeyCode == KEY_UP){
 				
-			// --- Display Message
+			
 			labyrinth12(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
 		}
 		else if ( intKeyCode == KEY_DOWN){
 				
-			// --- Display Message
+			
 			labyrinth4(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
 		}
 		else if ( intKeyCode == KEY_LEFT){
 				
-			// --- Display Message
+			
 			labyrinth8(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
@@ -348,44 +348,44 @@ function labyrinth1(){
 	document.onkeydown = applyKey;
 
 	function checkEventObj ( _event_ ){
-		// --- IE explorer
+		
 		if ( window.event )
 			return window.event;
-		// --- Netscape and other explorers
+		
 		else
 			return _event_;
 	}	
 	function applyKey (_event_){	
-		// --- Retrieve event object from current web explorer
+		
 		var winObj = checkEventObj(_event_);
 		var intKeyCode = winObj.keyCode;	
 		
 		if ( intKeyCode == KEY_RIGHT){
 				
-			// --- Display Message
+			
 			labyrinth7(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
 		}
 		else if ( intKeyCode == KEY_UP){
 				
-			// --- Display Message
+			
 			labyrinth9(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
 		}
 		else if ( intKeyCode == KEY_LEFT){
 				
-			// --- Display Message
+			
 			labyrinth13(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
@@ -405,34 +405,34 @@ function labyrinth1(){
 	document.onkeydown = applyKey;
 
 	function checkEventObj ( _event_ ){
-		// --- IE explorer
+		
 		if ( window.event )
 			return window.event;
-		// --- Netscape and other explorers
+		
 		else
 			return _event_;
 	}	
 	function applyKey (_event_){	
-		// --- Retrieve event object from current web explorer
+		
 		var winObj = checkEventObj(_event_);
 		var intKeyCode = winObj.keyCode;	
 		
 		if ( intKeyCode == KEY_UP){
 				
-			// --- Display Message
+			
 			labyrinth10(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
 		}
 		else if ( intKeyCode == KEY_DOWN){
 				
-			// --- Display Message
+			
 			labyrinth8(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
@@ -448,34 +448,34 @@ function labyrinth1(){
 	document.getElementById("labyrinth10").style.display = "block"; 
 	document.onkeydown = applyKey;
 	function checkEventObj ( _event_ ){
-		// --- IE explorer
+		
 		if ( window.event )
 			return window.event;
-		// --- Netscape and other explorers
+		
 		else
 			return _event_;
 	}	
 	function applyKey (_event_){	
-		// --- Retrieve event object from current web explorer
+		
 		var winObj = checkEventObj(_event_);
 		var intKeyCode = winObj.keyCode;	
 		
 		if ( intKeyCode == KEY_UP){
 				
-			// --- Display Message
+			
 			plazaPrincipal(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
 		}
 		else if ( intKeyCode == KEY_DOWN){
 				
-			// --- Display Message
+			
 			labyrinth9(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
@@ -494,34 +494,34 @@ function labyrinth1(){
 	document.onkeydown = applyKey;
 
 		function checkEventObj ( _event_ ){
-		// --- IE explorer
+		
 		if ( window.event )
 			return window.event;
-		// --- Netscape and other explorers
+		
 		else
 			return _event_;
 	}	
 	function applyKey (_event_){	
-		// --- Retrieve event object from current web explorer
+		
 		var winObj = checkEventObj(_event_);
 		var intKeyCode = winObj.keyCode;	
 		
 		if ( intKeyCode == KEY_UP){
 				
-			// --- Display Message
+			
 			labyrinth13(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
 		}
 		else if ( intKeyCode == KEY_DOWN){
 				
-			// --- Display Message
+			
 			labyrinth7(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
@@ -540,44 +540,44 @@ function labyrinth1(){
 	document.onkeydown = applyKey;
 
 	function checkEventObj ( _event_ ){
-		// --- IE explorer
+		
 		if ( window.event )
 			return window.event;
-		// --- Netscape and other explorers
+		
 		else
 			return _event_;
 	}	
 	function applyKey (_event_){	
-		// --- Retrieve event object from current web explorer
+		
 		var winObj = checkEventObj(_event_);
 		var intKeyCode = winObj.keyCode;	
 		
 		if ( intKeyCode == KEY_UP){
 				
-			// --- Display Message
+			
 			labyrinth14(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
 		}
 		else if ( intKeyCode == KEY_DOWN){
 				
-			// --- Display Message
+			
 			labyrinth12(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
 		}
 		else if ( intKeyCode == KEY_RIGHT){
 				
-			// --- Display Message
+			
 			labyrinth8(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;
@@ -594,24 +594,24 @@ function labyrinth1(){
 	document.onkeydown = applyKey;
 
 	function checkEventObj ( _event_ ){
-		// --- IE explorer
+		
 		if ( window.event )
 			return window.event;
-		// --- Netscape and other explorers
+		
 		else
 			return _event_;
 	}	
 	function applyKey (_event_){	
-		// --- Retrieve event object from current web explorer
+		
 		var winObj = checkEventObj(_event_);
 		var intKeyCode = winObj.keyCode;	
 		
 		if ( intKeyCode == KEY_DOWN){
 				
-			// --- Display Message
+			
 			labyrinth13(); 
 			
-			// --- Map the keyCode in another keyCode not used
+			
 			winObj.keyCode = intKeyCode = REMAP_KEY_T;
 			winObj.returnValue = false;
 			return false;

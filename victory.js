@@ -6,7 +6,7 @@ function victory(){
 	var audio=document.createElement('audio');
 	var first=true;
 		window.addEventListener('mousedown',onmousedown);
-	 
+	 //click to active the sound because Google Chrome block it 
 		function onmousedown(){
 		   if(!first) return;
 		   first=false;

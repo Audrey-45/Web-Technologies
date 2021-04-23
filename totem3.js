@@ -1,3 +1,4 @@
+//to know if is done or not 
 var threeDone=0; 
 function totem3(){
 	document.getElementsByTagName("body")[0].style.backgroundImage = "none";

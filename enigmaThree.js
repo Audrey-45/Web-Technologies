@@ -5,10 +5,7 @@ function enigmaThree(){
 	document.getElementById("enigmaThree").style.display = "block"; 				
 }
 function getValueThree() {
-		// Sélectionner l'élément input et récupérer sa valeur
 	var input = document.getElementById("inThree").value;
-	// Afficher la valeur
-		
 	if(input==1118)
 	{
 		alert("you succeeded");	

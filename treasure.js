@@ -10,8 +10,6 @@ var count=0;
 function dragstart_handler(ev) {
  console.log("dragStart");
  // Change the source element's background color to signify drag has started
- //ev.currentTarget.style.border = "dashed";
- // Add the id of the drag source element to the drag data payload so
  // it is available when the drop event is fired
  ev.currentTarget.style.height = "280px"; 
  ev.dataTransfer.setData("text", ev.target.id);
@@ -21,7 +19,6 @@ function dragstart_handler(ev) {
 function dragover_handler(ev) {
  console.log("dragOver");
  // Change the target element's border to signify a drag over event
- // has occurred
  ev.currentTarget.style.background = "transparent";
  
  ev.preventDefault();
@@ -29,8 +26,7 @@ function dragover_handler(ev) {
 function drop_handler(ev) {
   console.log("Drop");
   ev.preventDefault();
-  // Get the id of drag source element (that was added to the drag data
-  // payload by the dragstart event handler)
+  // Get the id of drag source element 
   var id = ev.dataTransfer.getData("text");
   // Only Move the element if the source and destination ids are both "move"
   if (oneDone==1 && id == "totem1_copy" && ev.target.id == "totem1_move") {

@@ -1,4 +1,6 @@
+//to know how many items are click
 var itemNumber=0; 
+//to know what item is click
 var tabNum = [];
 function number5()
 {
@@ -28,7 +30,7 @@ function number32()
 	document.getElementById("num32").style.display = "none";
 	labyrinth14(); 
 }
-
+//show the items recovered 
 function countItems(){
 
 	if(itemNumber==0)
@@ -65,9 +67,8 @@ function countItems(){
 	}
 }
 function getValueLock() {
-	// Sélectionner l'élément input et récupérer sa valeur
+	// Select the element 
 	var input = document.getElementById("in").value;
-	// Afficher la valeur
 		
 	if(input==1533)
 	{
@@ -79,6 +80,9 @@ function getValueLock() {
 		alert("The resultat isn't good. Try Again !");	
 	}
 }
+
+
+//access to the items recovered
 function lockLaby1(){
 	document.getElementsByTagName("body")[0].style.backgroundImage = "url('lockLabyrinth.jpg')";
 	document.getElementsByTagName("body")[0].style.textAlign = "center";

@@ -5,7 +5,7 @@ function enigmaTwo(){
 	document.getElementById("enigmaTwo").style.display = "block"; 
 
 }
-
+//to know what buttons are clicked
 var tab = [];
 function testTwo(id)
 {

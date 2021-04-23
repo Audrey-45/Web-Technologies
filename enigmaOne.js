@@ -12,9 +12,7 @@ function enigmaOne(){
 	
 }
 function getValueOne() {
-		// Sélectionner l'élément input et récupérer sa valeur
 		var input = document.getElementById("inOne").value;
-		// Afficher la valeur
 			
 		if(input==314)
 		{

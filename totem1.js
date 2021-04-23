@@ -1,3 +1,4 @@
+//to know if the totem is recovered or not
 var oneDone=0; 	
 function totem1(){
 	document.getElementsByTagName("body")[0].style.backgroundImage = "none";
