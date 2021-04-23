@@ -2,6 +2,7 @@ function treasure(){
 	document.getElementsByTagName("body")[0].style.backgroundImage = "none";
 	document.getElementsByTagName("body")[0].style.backgroundColor = "white";
 	document.getElementById("temploTresVentanas").style.display = "none";
+	document.getElementsByTagName("body")[0].style.textAlign = "center";
 	document.getElementById("treasure").style.display = "block"; 
 }
 var test=0;
@@ -12,7 +13,7 @@ function dragstart_handler(ev) {
  //ev.currentTarget.style.border = "dashed";
  // Add the id of the drag source element to the drag data payload so
  // it is available when the drop event is fired
- ev.currentTarget.style.height = "220px"; 
+ ev.currentTarget.style.height = "280px"; 
  ev.dataTransfer.setData("text", ev.target.id);
  // Tell the browser both copy and move are possible
  ev.effectAllowed = "copyMove";

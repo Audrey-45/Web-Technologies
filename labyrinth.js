@@ -220,7 +220,6 @@ function labyrinth1(){
 	document.getElementById("lockLaby").style.display = "none";
 	document.getElementById("labyrinth5").style.display = "block"; 
 	document.onkeydown = applyKey;
-
 	function checkEventObj ( _event_ ){
 		// --- IE explorer
 		if ( window.event )
@@ -246,6 +245,7 @@ function labyrinth1(){
 		}
 				
 	}
+					
 	}
 	function labyrinth6(){
 	document.getElementsByTagName("body")[0].style.backgroundImage = "url('6.png')";

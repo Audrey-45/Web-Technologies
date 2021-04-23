@@ -480,7 +480,8 @@ left:90px;
 
 #treasure div {
     padding: 2em;
-  }
+	background-position:center; 
+}
   
 #treasure .return 
 {
@@ -490,7 +491,7 @@ left:90px;
 }
 #totem1_copy, #totem2_copy, #totem3_copy  {
     width: 300px;
-    height: 210px;
+    height: 280px;
 	display:flex;
 	justify-content:center;
 	margin-left:100px; 
@@ -500,9 +501,10 @@ left:90px;
 #totem1_move, #totem2_move, #totem3_move {
 	border: 5px solid black;
     width: 300px;
-    height: 280px; 
+    height: 380px; 
 	display:flex;
 	justify-content:center;
+	margin-top:10px; 
 	margin-left:100px; 
 	display:inline-block;
 	text-align:center;
